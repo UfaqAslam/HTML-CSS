@@ -72,4 +72,3 @@ let calcSquare = (nums) => {
     console.log(nums*nums);
 }
 nums.forEach(calcSquare);
-
