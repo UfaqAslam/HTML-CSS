@@ -90,7 +90,7 @@ let newEven = even.filter((val) => {
 });
 console.log(newEven);
 
-// REDUCE
+// REDUCE   perform some operation & return single value
 let value = [11, 15, 16, 30];
 let output = value.reduce((pre, cur) => {
   return pre + cur;
@@ -98,8 +98,34 @@ let output = value.reduce((pre, cur) => {
 console.log(output);
 
 let larger = [5, 6, 100, 7, 9];
-const newlarger = arr.reduce((prev, curr) => {
+const newlarger = larger.reduce((prev, curr) => {
   return prev > curr ? prev : curr;
 });
 console.log(newlarger);
+
+// PRC. QUS.
+let marks = [92, 67, 97, 94, 89, 95, 78];
+let toppers = marks.filter((val) => {
+  return val > 90;
+})
+console.log(toppers);
+
+let n = prompt("Enter a number:");
+let array = [];
+
+for(let i = 1; i <= n; i++) {
+  array[i-1] = i;
+}
+console.log(array);
+
+let add = array.reduce((res, curr) => {
+  return res + curr;
+});
+console.log("add =", add);
+ 
+let produt = array.reduce((res, curr) => {
+  return res * curr;
+});
+console.log("produt =", produt);
+
 
