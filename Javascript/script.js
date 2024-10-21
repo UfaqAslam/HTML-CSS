@@ -10,27 +10,38 @@ alert("Hello");
 // let parag = document.getElementsByTagName("p");
 // console.dir(parag);
 
-// let firstEl = document.querySelector("p");
-// console.dir(firstEl);
-
-// let allEl = document.querySelectorAll("p");
-// console.dir(allEl);
-
 // let name = document.querySelectorAll(".myclass");
 // console.dir(name);
 
 let heading = document.querySelector("h1");
-console.dir(heading);
+heading.remove();
 
 let h2 = document.querySelector("h2");
 console.dir(h2.innerText);
 
 h2.innerText = h2.innerText + " from Beginners";
 
-let divs = document.querySelectorAll(".box");
+// let div = document.querySelector("div");
 
-let idx = 1;
-for(div of divs) {
-    div.innerText = `New unique value ${idx}`;
- idx++;
-}
+// div.style.backgroundColor = "purple ";
+// div.style.backgroundColor = "blue";
+
+// div.style.fontSize = "26px";
+
+// let el = document.createElement("div")
+
+let div = document.querySelector("p");
+// div.append(newBtn);
+// div.prepend(newBtn);
+// div.before(newBtn);
+// div.after(newBtn);
+
+let newHeading = document.createElement("h1");
+newHeading.innerText = "Hi, I am new coder";
+
+let newButton = document.createElement("button");
+newButton.innerText = "Click me! ";
+
+newButton.style.color = "white";
+newButton.style.backgroundColor = "purple";
+document.querySelector("body").prepend(newButton);

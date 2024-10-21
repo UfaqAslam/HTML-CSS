@@ -1,8 +1,16 @@
-.box {
-    height: 100px;
-    width: 100px;
+#box {
+    height: 150px;
+    width: 160px;
+    color: white;
     border: 1px solid black;
-    margin: 5px;
     text-align: center;
-    background-color: aquamarine;
+    background-color:dodgerblue;
+}
+.content {
+   color: red;
+}
+.newClass {
+    background-color: yellow;
+   
+
 }
